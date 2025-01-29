@@ -21,7 +21,7 @@ const ItenCount = ({stock, onAdd}) => {
             <span className='btn'>{count}</span>
             <button className='btn btn-success'onClick={add} disabled={count === stock} >+</button>
         </div>
-          <button className='btn btn-primary' disabled={stock === 0 || count === 0 } onClick={()=>onAdd(count)} >Agregar al carrito</button>
+           <button className='btn btn-primary' disabled={stock === 0 || count === 0 } onClick={()=>onAdd(count)} >Agregar al carrito</button>
     </div>
 
   )

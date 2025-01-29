@@ -11,6 +11,7 @@ const ItemListContainer = ({greetig}) => {
          <div>
              <h1>{greetig}</h1>
              {/*este componente despues lo sacamos*/}
+             {/*nav bar react bootstrap*/}
              <ItenCount stock={8} onAdd={onAdd}/>
          </div>
   )    

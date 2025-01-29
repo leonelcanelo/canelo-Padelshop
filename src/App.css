@@ -10,13 +10,18 @@
   align-items:center;
   color: wheat;
   background-color: whitesmoke;
-  
+
 }
 
 .logo-nav{
   width: 8rem;
-  border-radius: 50%;
+  border-radius: 100%;
 } 
+.padel{
+  font-size: 200%;
+  color: gray;
+  align-items:center;
+}
 
 .logoimg{
   width: 18px;
