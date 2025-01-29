@@ -11,8 +11,8 @@ const ItenCount = ({stock, onAdd}) => {
     const subtract = () => {
         setCount(count -1) 
     }
-    console.log('valor de count : ', count)
-    console.log('soy itenmcount y me monte')
+    //console.log('valor de count : ', count)
+    //console.log('soy itenmcount y me monte')
   return (
     <div>
         <div>
