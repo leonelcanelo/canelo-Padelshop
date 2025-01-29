@@ -1,9 +1,17 @@
-const ItemListContainer = (props) => {
+import ItenCount from "./ItenCount"
+
+const ItemListContainer = ({greetig}) => {
    // console.log (props)
    // const {greeting}= props
+
+   const onAdd = (cantidad) => {
+       alert(`Agregaste ${cantidad} al carrito`)
+   }
        return(
          <div>
-             <h1>{props.greetig}</h1>
+             <h1>{greetig}</h1>
+             {/*este componente despues lo sacamos*/}
+             <ItenCount stock={8} onAdd={onAdd}/>
          </div>
   )    
 }
