@@ -4,6 +4,7 @@ import './App.css'
 import ItemListContainer from './componentes/ItemListContainer'
 /*import EjemploPropsChildren from './componentes/EjemploPropsChildren'*/
 import NavBarPadelBootstrap from './componentes/NavBarPadelBootstrap'
+import FetchContainer from './componentes/Ejemplos/FetchContainer'
 
 function App() {
   /*const biemvenido = 'biemvenidos a padelshops 😘'*/
@@ -11,8 +12,9 @@ function App() {
     <div>
       
       <NavBarPadelBootstrap/>
-      <ItemListContainer greeting='Biemvenidos a Padelshop'/>
+            {/*<ItemListContainer greeting='Biemvenidos a Padelshop'/>*/}
 
+      <FetchContainer/>
      {/* Navbar con css */}
        {/*<Navbar/>*/}
        {/*importo el componente*/}

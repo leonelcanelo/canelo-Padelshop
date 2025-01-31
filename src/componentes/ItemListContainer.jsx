@@ -19,22 +19,22 @@ const ItemListContainer = ({greetig}) => {
             resolve('si hay lazana')
          }
 
-   })*/
+   }) */
       // console.log(ejemploPromise)
       useEffect(()=>{
-       //////llamamos a la promesa
+      //////llamamos a la promesa
         getProducts()
       //////tratamos y la guardamos en un estado
         .then((res)=> setProductsList(res))
-     //////atrapamos el error
+      //////atrapamos el error
         .catch((error)=>console.log(error,'error'))
       },[])
-
+    
       console.log(productsList,'data')
        return(
          <div>
              <h1>{greetig}</h1>
-             <p></p>
+             {productsList.map((product)=> <p key={product.id}>{product.name}</p> )}
              {/*este componente despues lo sacamos*/}
              {/*nav bar react bootstrap*/}
              <ItenCount stock={10} onAdd={onAdd}/>
