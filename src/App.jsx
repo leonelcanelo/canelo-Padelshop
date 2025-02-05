@@ -1,10 +1,8 @@
 import './App.css'
-/*import EjemploProps from "./componentes/EjemploProps"*/
-/*import Navbar from './componentes/Navbar'*/
-import ItemListContainer from './componentes/ItemListContainer'
-/*import EjemploPropsChildren from './componentes/EjemploPropsChildren'*/
-import NavBarPadelBootstrap from './componentes/NavBarPadelBootstrap'
 import FetchContainer from './componentes/Ejemplos/FetchContainer'
+import ItemDetailContainer from './componentes/ItemDetailContainer'
+import ItemListContainer from './componentes/ItemListContainer'
+import NavBarPadelBootstrap from './componentes/NavBarPadelBootstrap'
 
 function App() {
   /*const biemvenido = 'biemvenidos a padelshops 😘'*/
@@ -12,24 +10,14 @@ function App() {
     <div>
       
       <NavBarPadelBootstrap/>
-            {/*<ItemListContainer greeting='Biemvenidos a Padelshop'/>*/}
-
-      <FetchContainer/>
-     {/* Navbar con css */}
-       {/*<Navbar/>*/}
-       {/*importo el componente*/}
-         {/*<EjemploPropsChildren>
-             hola!
-         </EjemploPropsChildren>
-         <EjemploPropsChildren>
-             <img src="../img/Zapatillas k tour.jpeg" alt="" />
-         </EjemploPropsChildren>
-         <EjemploPropsChildren>
-             <ItemListContainer greeting='Biemvenidos a Padelshop'/>  
-         </EjemploPropsChildren>
-         <EjemploPropsChildren/>*/}
+      <ItemListContainer greeting='Biemvenidos a Padelshop'/>
+      {/*<FetchContainer/>*/}
+      <ItemDetailContainer/>
     </div>
   )
 }
 
 export default App
+
+
+/*rafc*/

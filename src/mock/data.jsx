@@ -32,14 +32,13 @@ const products = [
         price: 499,
         category:'paletas',
         description:'skmdlksdlkandaslkdsnaslkdnlsk',
-        img:'../img/HEAD Graphene 360 Zephyr Série de Raquettes de Padel_Pop Tennis (Zephyr, Pro, UL)',
+        img:'../img/Dunlop Sports Dunlop Pro Padel, 3-Ball can, Yellow.jpeg',
         stock:5
     },
 
 ]
 
 // creamos la promesa y exportamos 
-
 export const getProducts = () =>{
     let error= false
     return new Promise ((resolve, reject)=>{
@@ -54,8 +53,19 @@ export const getProducts = () =>{
     })
 }
 
+// un item
 
-
+export const getOneProduct = (id)=>{
+    return new Promise((resolve)=>{
+        setTimeout(() => {
+            // version harcodeada
+            //resolve(products[2])   
+            //version dinamica
+            let prod = products.find((item)=> item.id === id) 
+            resolve(prod)       
+        }, 3000)
+    })
+}  
 
 
 
